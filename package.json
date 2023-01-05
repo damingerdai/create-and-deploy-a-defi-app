@@ -1,0 +1,22 @@
+{
+  "name": "defi-app-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "console": "truffle console",
+    "deploy": "npm run compile && npm run migrate",
+    "test": "truffle exec ./test/getMyTokenBalance.js && truffle exec ./test/transferMyTokenToFarmToken.js && truffle exec ./test/withdrawMyTokenFromTokenFarm.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "truffle": "^5.7.1"
+  }
+}
